@@ -159,20 +159,3 @@ data = pd.DataFrame(
 data.to_csv('house_price.csv',index=False)
 print()
 ```
-## Random DataSet Maker
-
-```python
-import pandas as pd
-import numpy as np
-
-data = pd.DataFrame(
-    {
-        'area':np.random.randint(1000,5000,size=(35,))
-        'price':np.random.randint(25000,50000,size=(35,))
-        'review':np.random.randint(1,10,size=(35,))
-    }
-)
-
-data.to_csv('house_price.csv',index=False)
-print()
-```
