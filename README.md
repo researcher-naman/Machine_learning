@@ -41,7 +41,7 @@ How to Make Confussion Matrix
 from sklearn.metrics import confusion_matrix
 
 # Compute confusion matrix
-conf_matrix = confusion_matrix(y_true, y_pred)
+conf_matrix = confusion_matrix(y_test, y_pred)
 print(conf_matrix)
 ```
 
@@ -51,7 +51,7 @@ How to get Classification Evaluation Summary
 from sklearn.metrics import classification_report
 
 # Generate classification report
-class_report = classification_report(y_true, y_pred)
+class_report = classification_report(y_test, y_pred)
 print(class_report)
 ```
 ## How to import models and use them
@@ -150,8 +150,8 @@ import numpy as np
 
 data = pd.DataFrame(
     {
-        'area':np.random.randint(1000,5000,size=(35,))
-        'price':np.random.randint(25000,50000,size=(35,))
+        'area':np.random.randint(1000,5000,size=(35,)),
+        'price':np.random.randint(25000,50000,size=(35,)),
         'review':np.random.randint(1,10,size=(35,))
     }
 )
