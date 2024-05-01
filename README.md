@@ -13,7 +13,13 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
 ```
+how to inmport dataset
 
+```python
+data = pd.read_csv('dataset.csv')
+x = data.drop('y',axis=1)
+y = data['y']
+```
 how to use train test split data
 
 ```python
